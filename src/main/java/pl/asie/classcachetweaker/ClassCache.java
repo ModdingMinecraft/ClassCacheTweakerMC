@@ -31,7 +31,6 @@ import net.minecraft.launchwrapper.LaunchClassLoader;
 import org.lwjgl.Sys;
 
 import javax.swing.*;
-import java.awt.*;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.File;
@@ -242,10 +241,6 @@ public class ClassCache implements Serializable {
 					"** BREAK YOUR MODPACK IN STRANGE WAYS **!\n" +
 					"Please only use it if you KNOW WHAT YOU ARE DOING!";
 			System.out.println(ws);
-
-			if (!GraphicsEnvironment.isHeadless()) {
-				JOptionPane.showMessageDialog(new JFrame(), ws, "ClassCacheTweaker Warning", JOptionPane.WARNING_MESSAGE);
-			}
 		}
 
 		final ClassCache cache1 = cache;
